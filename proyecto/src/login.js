@@ -17,16 +17,17 @@ document.querySelector("#app").innerHTML = `
 </div>
 `;
 
-document.querySelector("#login-form").addEventListener("submit",
-handleLogin);
-document.querySelector("#btn-registro").addEventListener("click",
-mostrarRegistro);
-}
+document.querySelector("#login-form").addEventListener("submit",handleLogin);
+document.querySelector("#btn-registro").addEventListener("click",mostrarRegistro);
 
 // ir a registro
-document.getElementById('btn-registro').addEventListener('click', ()=> {
+document.getElementById('btn-registro').addEventListener('click', () => {
 mostrarRegistro();
 });
+
+}
+
+
 
 async function handleLogin(event) {
 event.preventDefault();
